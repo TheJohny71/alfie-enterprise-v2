@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/alfie-enterprise-v2/', // Replace with your repo name
+  base: 'https://thejohny71.github.io/alfie-enterprise-v2/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     sourcemap: true
   }
 });
