@@ -3,9 +3,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: 'https://thejohny71.github.io/alfie-enterprise-v2/',
+  base: '/alfie-enterprise-v2/',  // This matches your GitHub repo name
   build: {
     outDir: 'docs',
-    sourcemap: true
+    sourcemap: true,
+    assetsDir: 'assets'
   }
 });
