@@ -8,6 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { motion, AnimatePresence } from 'framer-motion';
+import NoiseTexture from '../components/NoiseTexture';
 
 // Constants for feature data
 const FEATURES = [
@@ -168,7 +169,7 @@ const WelcomePage = () => {
     <div className="min-h-screen flex flex-col relative overflow-hidden bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(94,92,230,0.1),rgba(0,166,142,0.05))]" />
-      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-[0.02]" />
+      <NoiseTexture />
       
       {/* Header */}
       <motion.header 
